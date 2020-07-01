@@ -1,0 +1,173 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+.center{text-align: center;}
+.ha-button{
+	line-height: 1.499;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    white-space: nowrap;
+    padding: 0 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    height: 32px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+    position: relative;
+    box-shadow: 0 2px 0 rgba(0,0,0,.015);
+    color: rgba(0,0,0,.65);
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+}
+.red-button, .fl-builder-button.red-button{
+    background: #fb5b49 !important;
+    color: #fff !important;
+    border-color: #fb5b49 !important;
+}
+.haf-button-bar{text-decoration: none !important;}
+.required{color: #ff0000;}
+.haf-form{
+	background: #fff;
+	padding: 20px;
+	box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.21);
+}
+.haf-input{
+	margin-bottom: 15px;
+	box-sizing: border-box;
+	margin: 0;
+	list-style: none;
+	position: relative;
+	display: inline-block;
+	padding: 4px 11px;
+	width: 100%;
+	height: 32px;
+	font-size: 14px;
+	line-height: 1.5;
+	color: rgba(0,0,0,.65);
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #d9d9d9;
+	border-radius: 4px;
+	transition: all .3s;
+}
+.haf-input[type=number]{height: 32px !important;}
+.haf-input:focus, .haf-input:hover {
+	border-color: #5b9dd9;
+	border-right-width: 1px!important;
+}
+.haf-form .haf-field{margin-bottom: 8px;}
+.haf-form .haf-field:last-child{margin-bottom: 0;}
+.haf-form .haf-button{
+	line-height: 1.499;
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none;
+	white-space: nowrap;
+	padding: 0 15px;
+	font-size: 14px;
+	border-radius: 4px;
+	height: 32px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	transition: all .3s cubic-bezier(.645,.045,.355,1);
+	position: relative;
+	box-shadow: 0 2px 0 rgba(0,0,0,.015);
+	color: rgba(0,0,0,.65);
+	border: 1px solid #d9d9d9;
+	min-width: 200px;
+	outline: none;
+	margin: 15px 0 5px;
+}
+.haf-input-select select{height: 32px;}
+label.haf-radio-container {
+	width: 100%;
+	display: block;
+	margin: 5px 0;
+}
+.haf-form input[type=radio], .haf-form input[type=checkbox] {
+	border: 1px solid #b4b9be;
+	background: #fff;
+	color: #555;
+	clear: none;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 0;
+	height: 16px;
+	margin: -4px 4px 0 0;
+	outline: 0;
+	padding: 0!important;
+	text-align: center;
+	vertical-align: middle;
+	width: 16px;
+	min-width: 16px;
+	-webkit-appearance: none;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+	transition: .05s border-color ease-in-out;
+}
+.haf-title{margin: 5px 0 10px;}
+.haf-sub-title{margin-bottom: 18px;}
+.haf-field.haf-input-textarea textarea {
+	min-height: 62px;
+}
+.haf-field label{display: inline;}
+.haf-form input[type=radio]{
+    border-radius: 50%;
+	outline: none !important;
+}
+.haf-field .haf-radio-container{cursor: pointer;display: block;}
+.haf-form input[type=radio]:checked:before, .haf-form input[type=checkbox]:checked:before {
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    font: 400 21px/1 dashicons;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.haf-form input[type=radio]:checked:before {
+    content: "\2022";
+    text-indent: -9999px;
+    border-radius: 50px;
+    font-size: 24px;
+    width: 6px;
+    height: 6px;
+    margin: 4px;
+    line-height: 16px;
+    background-color: #1e8cbe;
+}
+.haf-message{text-align: center;}
+.haf-error *{color: #ce4435; border-color: #ce4435 !important;}
+.haf-success *{color: green;}
+.haf-message > div{padding: 10px 0;}
+.haf-loader {
+	border: 2px solid #a8a8a8;
+    border-top: 2px solid #3498db;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 2s linear infinite;
+    position: relative;
+    margin: 5px;
+    left: calc(50% - 12px);
+    transform: translateX(-50%);
+	display: none;
+}
+.haf-submit button{background: #e2a516; color: #fff !important;}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
